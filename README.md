@@ -1,2 +1,2 @@
-# ionic-simple-chat
-Simple chat app - used ionic and firebase
+# Ionic simple chat
+Library - Angular Socket.IO
