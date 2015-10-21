@@ -17,7 +17,7 @@ angular.module('starter.controllers', [])
   $scope.createUser = function(user){
     console.log('createUser function called');
 
-    if(user && user.email && user.password && user.displayname){
+    if(user && user.email && user.password && user.displayName){
 
       $ionicLoading.show({
         template:'Signing you up..'
@@ -31,7 +31,7 @@ angular.module('starter.controllers', [])
 
         ref.child("users").child(userData.uid).set({
           email: user.email,
-          displayname: user.displayname
+          displayName: user.displayName
         })
 
         $ionicLoading.hide();
